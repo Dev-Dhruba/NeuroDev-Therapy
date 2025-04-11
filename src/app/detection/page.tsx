@@ -97,7 +97,7 @@ export default function DetectionPage() {
                           </CardHeader>
                           <CardContent>
                             <p className="text-sm text-gray-500">
-                              Our tests take approximately 15-20 minutes to complete. You'll receive immediate results
+                              Our tests take approximately 15-20 minutes to complete. You&aposll receive immediate results
                               with recommendations for next steps based on your responses.
                             </p>
                           </CardContent>

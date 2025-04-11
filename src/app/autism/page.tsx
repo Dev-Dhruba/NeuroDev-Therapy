@@ -456,7 +456,7 @@ export default function AutismPage() {
                       >
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
-                      Interactive "soundboard" for relaxing sounds
+                      Interactive &qoutsoundboard&qout for relaxing sounds
                     </li>
                     <li className="flex items-center">
                       <svg
@@ -684,7 +684,7 @@ export default function AutismPage() {
                       >
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
-                      Mirror game: mimic avatar's mouth movements
+                      Mirror game: mimic avatar&aposs mouth movements
                     </li>
                     <li className="flex items-center">
                       <svg
@@ -742,7 +742,7 @@ export default function AutismPage() {
               <Brain className="h-6 w-6" />
               <span>NeuroDev Therapy</span>
             </Link>
-            <p className="text-sm text-gray-500 md:text-base">
+            <p className="text-sm text-gray-500">
               Providing specialized therapy for individuals with autism and dyslexia.
             </p>
           </div>
