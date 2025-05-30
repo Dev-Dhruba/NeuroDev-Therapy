@@ -36,14 +36,11 @@ Features cards for:
 - **Detection Modules**: AQ, M-CHAT-R/F, CARS, SRS-2
 - **Therapy Modules**: Communication, Social, Cognitive, Sensory, Literacy, Behavioral, Voice
 
-![Autism Modules](https://media.giphy.com/media/l41K5U2kXRTTxOaLC/giphy.gif)
 
 ### 🔤 Dyslexia Page
 Features cards for:
 - **Detection Modules**: Phonological tests, RAN, Memory, Writing Analysis, Reading Fluency
 - **Therapy Modules**: Phonics, TTS, Dictation, Sight Words, Typing, Sequencing, Letter Writing
-
-![Therapy Interaction](https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif)
 
 ---
 

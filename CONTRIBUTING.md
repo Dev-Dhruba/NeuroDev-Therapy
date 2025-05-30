@@ -25,6 +25,7 @@ npm run dev
 The app will typically run at http://localhost:3000
 
 ## 📁 Project Structure
+```
 neurodev-therapy/
 ├── public/             # Static files (images, sounds, etc.)
 ├── src/
@@ -36,6 +37,7 @@ neurodev-therapy/
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
+```
 
 ## 💡 Contribution Ideas
 🧩 Add animated therapy cards or modules
