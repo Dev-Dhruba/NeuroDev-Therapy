@@ -1,37 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🧠 NEURODEV THERAPY 🎮  
+Helping detect & support **Autism** and **Dyslexia** through engaging module-based therapies.
 
-First, run the development server:
+## Connect with me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![Join the discord server for contributions](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/gwyUM2yh)  [![Connect with me on LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dhruba-bhattacharyya-336928292/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=3000&color=00C4FF&center=true&vCenter=true&width=800&lines=Welcome+to+Neurodev+Therapy;Autism+%26+Dyslexia+Support+Platform;Modular+Therapies+for+Every+Learner!" alt="Typing SVG" />
+</div>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Overview
 
-## Learn More
+Neurodev Therapy is an open-source UI project designed to:
+- Detect **Autism Spectrum Disorder (ASD)** and **Dyslexia**
+- Provide **module-based therapies** tailored to each condition
+- Engage users with gamified, interactive learning experiences
 
-To learn more about Next.js, take a look at the following resources:
+> ⚙️ Built with a frontend focus — no backend, AI, or database integration (yet!)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧭 Platform Design
 
-## Deploy on Vercel
+### 🖼️ Landing Page
+- Hero section with **call-to-action (CTA) buttons**:
+  - 👦 Autism
+  - 🔤 Dyslexia
+  - 🔍 Detection Test
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 👦 Autism Page
+Features cards for:
+- **Detection Modules**: AQ, M-CHAT-R/F, CARS, SRS-2
+- **Therapy Modules**: Communication, Social, Cognitive, Sensory, Literacy, Behavioral, Voice
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# NeuroDev-Therapy
+
+### 🔤 Dyslexia Page
+Features cards for:
+- **Detection Modules**: Phonological tests, RAN, Memory, Writing Analysis, Reading Fluency
+- **Therapy Modules**: Phonics, TTS, Dictation, Sight Words, Typing, Sequencing, Letter Writing
+
+---
+
+## 🧪 Detection Modules
+
+### Autism Detection
+- **AQ** – 50-item self-assessment
+- **M-CHAT-R/F** – 20 yes/no for toddlers
+- **CARS** – Behavior rating scale
+- **SRS-2** – Measures social ability
+
+### Dyslexia Detection
+- Phonological awareness tests
+- Rapid Automatized Naming (RAN)
+- Auditory memory tasks
+- Writing sample analysis
+- Reading fluency checks
+
+---
+
+## 🎯 Therapy Modules
+
+### Autism Therapy
+| Module | Sample Therapies |
+|--------|------------------|
+| Communication | Flashcards, speech-to-text, AAC icons |
+| Social | Role-play, emotion games, cartoon clips |
+| Cognitive | Memory puzzles, sequencing games |
+| Sensory | Calming animations, soundboards |
+| Literacy | Read-aloud, dictation, phonics |
+| Behavioral | Token boards, animations |
+| Voice Practice | Mirror games, pronunciation drills |
+
+### Dyslexia Therapy
+| Module | Sample Therapies |
+|--------|------------------|
+| Phonological | Sound-letter games, voice guidance |
+| TTS/Read-along | Click to read, color-coded text |
+| Dictation | Visual feedback transcription |
+| Sight Words | Flashcards, gamified books |
+| Spelling | Typing audio, glowing keys |
+| Sequencing | Story building from images |
+| Letter Writing | Trace + animate characters |
+
+---
+
+## 🛠️ Tech Stack (UI Only)
+
+- **React** with Tailwind CSS
+- **Framer Motion** for animations
+- **Shadcn/UI** for clean components
+- **Lucide Icons** for accessibility
+
+---
+
+## ✨ Want to Contribute?
+
+We're building this as an open, community-driven platform.  
+Feel free to suggest UI components, design animations, or fix bugs!
+
+> See the [CONTRIBUTING.md](CONTRIBUTING.md) for setup and details.
+
+---
+
+## 🧑‍💻 Maintainers
+
+<table>
+  <tr>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/144554934?v=4" width="80"/><br><b>Dhruba <br>Bhattacharyya</b><br><sub>Project Admin</sub><br><a href="https://www.linkedin.com/in/dhruba-bhattacharyya-336928292/"><img src="https://img.icons8.com/fluency/32/000000/linkedin.png"/></a></td>
+  </tr>
+</table>
+
+---
+
+## 💬 Join the Discussion
+💡 Join our [Discord Server](https://discord.gg/gwyUM2yh) to:
+- Share ideas 💡
+- Suggest features 🧩
+- Contribute code 💻
+- Connect with neurodiversity advocates 🤝
+
+---
+
+## 🌟 Show Your Support
+
+If you like the project, **leave a ⭐️ on GitHub** and help it reach more developers and families 💖  
