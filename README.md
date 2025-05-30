@@ -109,7 +109,7 @@ Feel free to suggest UI components, design animations, or fix bugs!
 
 <table>
   <tr>
-    <td align="center"><img src="https://avatars.githubusercontent.com/u/144554934?v=4" width="80"/><br><b>Dhruba <br>Bhattacharyya</b><br><sub>Project Admin</sub><br><a href="https://www.linkedin.com/in/yourprofile/"><img src="https://img.icons8.com/fluency/32/000000/linkedin.png"/></a></td>
+    <td align="center"><img src="https://avatars.githubusercontent.com/u/144554934?v=4" width="80"/><br><b>Dhruba <br>Bhattacharyya</b><br><sub>Project Admin</sub><br><a href="https://www.linkedin.com/in/dhruba-bhattacharyya-336928292/"><img src="https://img.icons8.com/fluency/32/000000/linkedin.png"/></a></td>
   </tr>
 </table>
 
