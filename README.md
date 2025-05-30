@@ -3,7 +3,7 @@
 # 🧠 NEURODEV THERAPY 🎮  
 Helping detect & support **Autism** and **Dyslexia** through engaging module-based therapies.
 
-[![Join our Discord](https://img.shields.io/discord/123456789012345678.svg?label=Join%20Us%20on%20Discord&logo=discord&style=for-the-badge)](https://discord.gg/YOUR_DISCORD_INVITE)
+[![Join our Discord](https://img.shields.io/discord/123456789012345678.svg?label=Join%20Us%20on%20Discord&logo=discord&style=for-the-badge)](https://discord.gg/wDqfPaGd)
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=3000&color=00C4FF&center=true&vCenter=true&width=800&lines=Welcome+to+Neurodev+Therapy;Autism+%26+Dyslexia+Support+Platform;Modular+Therapies+for+Every+Learner!" alt="Typing SVG" />
 </div>
