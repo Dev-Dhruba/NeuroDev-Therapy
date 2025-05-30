@@ -78,10 +78,3 @@ Your contributions help make this project inclusive, educational, and impactful.
 Feel free to share ideas in our Discord server or create an issue with feature suggestions.
 
 Let’s build something that empowers neurodiverse learners! 💙
-
-Let me know if you'd like:
-- A visual template for module cards
-- A sample page layout in JSX
-- Deployment instructions (e.g., for Netlify or Vercel)
-
-I'm happy to help you get this open-source project polished and contributor-ready!
