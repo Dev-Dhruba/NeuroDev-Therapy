@@ -14,12 +14,10 @@ Helping detect & support **Autism** and **Dyslexia** through engaging module-bas
 
 ## 📌 Overview
 
-Neurodev Therapy is an open-source UI project designed to:
+Neurodev Therapy is an open-source project designed to:
 - Detect **Autism Spectrum Disorder (ASD)** and **Dyslexia**
 - Provide **module-based therapies** tailored to each condition
 - Engage users with gamified, interactive learning experiences
-
-> ⚙️ Built with a frontend focus — no backend, AI, or database integration (yet!)
 
 ---
 
@@ -87,12 +85,15 @@ Features cards for:
 
 ---
 
-## 🛠️ Tech Stack (UI Only)
+## 🛠️ Tech Stack
 
-- **React** with Tailwind CSS
+- **Next** for frontend and backend
 - **Framer Motion** for animations
 - **Shadcn/UI** for clean components
 - **Lucide Icons** for accessibility
+- **supabase** for database
+- **gemini** for LLM model
+- **Vercel AI SDK** for AI Integrations
 
 ---
 
