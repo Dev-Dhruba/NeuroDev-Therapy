@@ -9,8 +9,8 @@ We welcome UI developers, designers, educators, and accessibility advocates.
 
 ### 1. Fork & Clone
 ```bash
-git clone https://github.com/YOUR_USERNAME/neurodev-therapy.git
-cd neurodev-therapy
+git clone https://github.com/Dev-Dhruba/NeuroDev-Therapy.git
+cd NeuroDev-Therapy
 ```
 
 ### 2. Install dependencies
@@ -27,16 +27,24 @@ The app will typically run at http://localhost:3000
 ## 📁 Project Structure
 ```
 neurodev-therapy/
-├── public/             # Static files (images, sounds, etc.)
+├── public/             # Static files (images, favicon, etc.)
 ├── src/
-│   ├── pages/          # Landing page, Autism, Dyslexia
-│   ├── components/     # Reusable components (cards, buttons)
-│   ├── assets/         # Images, gifs, icons
-│   ├── styles/         # Tailwind and custom styles
-│   └── app.jsx         # Entry point
-├── tailwind.config.js
-├── vite.config.js
-└── README.md
+│   ├── app/            # Next.js app router pages and layouts
+│   │   ├── about/      # About page
+│   │   ├── autism/     # Autism page
+│   │   ├── detection/  # Detection test page
+│   │   ├── dyslexia/   # Dyslexia page
+│   │   ├── layout.tsx  # Root layout component
+│   │   └── page.tsx    # Landing page
+│   ├── components/     # Reusable UI components
+│   │   └── ui/         # Shadcn UI components
+│   └── lib/            # Utility functions and helpers
+├── .eslintrc.json      # ESLint configuration
+├── next.config.js      # Next.js configuration
+├── package.json        # Project dependencies
+├── tailwind.config.ts  # Tailwind CSS configuration
+├── tsconfig.json       # TypeScript configuration
+└── README.md           # Project documentation
 ```
 
 ## 💡 Contribution Ideas

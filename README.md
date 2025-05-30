@@ -5,7 +5,7 @@ Helping detect & support **Autism** and **Dyslexia** through engaging module-bas
 
 ## Connect with me
 
-[![Join the discord server for contributions](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/https://discord.gg/YN6wevgY)  [![Connect with me on LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dhruba-bhattacharyya-336928292/)
+[![Join the discord server for contributions](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/gwyUM2yh)  [![Connect with me on LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dhruba-bhattacharyya-336928292/)
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=3000&color=00C4FF&center=true&vCenter=true&width=800&lines=Welcome+to+Neurodev+Therapy;Autism+%26+Dyslexia+Support+Platform;Modular+Therapies+for+Every+Learner!" alt="Typing SVG" />
 </div>
@@ -116,7 +116,7 @@ Feel free to suggest UI components, design animations, or fix bugs!
 ---
 
 ## 💬 Join the Discussion
-💡 Join our [Discord Server](https://discord.gg/YOUR_DISCORD_INVITE) to:
+💡 Join our [Discord Server](https://discord.gg/gwyUM2yh) to:
 - Share ideas 💡
 - Suggest features 🧩
 - Contribute code 💻
