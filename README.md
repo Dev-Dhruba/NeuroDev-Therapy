@@ -1,6 +1,7 @@
 <div align="center">
 
 # 🧠 NEURODEV THERAPY 🎮  
+<img src="/public/images/nav.png" alt="NeuroDev Therapy Banner" />
 Helping detect & support **Autism** and **Dyslexia** through engaging module-based therapies.
 
 ## Connect with me
