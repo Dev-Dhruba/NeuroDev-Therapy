@@ -53,8 +53,9 @@ The app will typically run at http://localhost:3000
 ## 📁 Project Structure
 ```
 neurodev-therapy/
-├── public/             # Static files (images, favicon, contributing, etc.)
+├── public/             # Static files (images, favicon, etc.)
 ├── src/
+|   ├── contributing/   #images(fork-button.png, fork-setup.png, etc.)
 │   ├── app/            # Next.js app router pages and layouts
 │   │   ├── about/      # About page
 │   │   ├── autism/     # Autism page
