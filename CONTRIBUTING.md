@@ -28,7 +28,7 @@ Open your **file explorer** create an empty folder or folder where you want to c
 On the top bar type ```cmd``` and hit enter.
 ![Clone Locally](./src/contributing/typecmd.png)
 
-Then pase the command given below and hit enter.
+Then paste the command given below and hit enter.
 
 ```bash
 git clone https://github.com/<your-username>/NeuroDev-Therapy.git
