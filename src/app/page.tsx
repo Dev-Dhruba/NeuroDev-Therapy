@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Brain, BookOpen, TestTube } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Brain, BookOpen, TestTube } from "lucide-react";
 
 export default function Home() {
   return (
@@ -12,16 +12,28 @@ export default function Home() {
             <span>NeuroDev Therapy</span>
           </Link>
           <nav className="hidden md:flex gap-6">
-            <Link href="/autism" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="/autism"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Autism
             </Link>
-            <Link href="/dyslexia" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="/dyslexia"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Dyslexia
             </Link>
-            <Link href="/detection" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="/detection"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               Detection Test
             </Link>
-            <Link href="/about" className="text-sm font-medium hover:underline underline-offset-4">
+            <Link
+              href="/about"
+              className="text-sm font-medium hover:underline underline-offset-4"
+            >
               About Us
             </Link>
           </nav>
@@ -49,9 +61,10 @@ export default function Home() {
           </Button>
         </div>
       </header>
-      <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-slate-50">
-          <div className="container px-4 md:px-6">
+
+      <main className="flex-1 flex flex-col items-center justify-center">
+        <section className="w-full py-5 md:py-15 lg:py-32 bg-gradient-to-b from-white to-slate-50">
+          <div className="container mx-auto px-12 ">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
@@ -59,13 +72,17 @@ export default function Home() {
                     Specialized Therapy for Autism & Dyslexia
                   </h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl">
-                    Discover gamified, module-based therapies designed to support individuals with autism and dyslexia
-                    through engaging, interactive experiences.
+                    Discover gamified, module-based therapies designed to
+                    support individuals with autism and dyslexia through
+                    engaging, interactive experiences.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link href="/detection">
-                    <Button size="lg" className="bg-green-600 hover:bg-green-700">
+                    <Button
+                      size="lg"
+                      className="bg-green-600 hover:bg-green-700"
+                    >
                       Take Detection Test
                       <TestTube className="ml-2 h-4 w-4" />
                     </Button>
@@ -79,9 +96,14 @@ export default function Home() {
                       <Brain className="h-6 w-6 text-purple-600" />
                     </div>
                     <h3 className="text-xl font-bold">Autism Therapy</h3>
-                    <p className="text-center text-gray-500">Gamified modules for autism therapy and development.</p>
+                    <p className="text-center text-gray-500">
+                      Gamified modules for autism therapy and development.
+                    </p>
                     <Link href="/autism">
-                      <Button variant="outline" className="mt-2 border-purple-200 text-purple-600 hover:bg-purple-50">
+                      <Button
+                        variant="outline"
+                        className="mt-2 border-purple-200 text-purple-600 hover:bg-purple-50"
+                      >
                         Explore Modules
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
@@ -92,9 +114,14 @@ export default function Home() {
                       <BookOpen className="h-6 w-6 text-blue-600" />
                     </div>
                     <h3 className="text-xl font-bold">Dyslexia Therapy</h3>
-                    <p className="text-center text-gray-500">Interactive learning strategies for dyslexia.</p>
+                    <p className="text-center text-gray-500">
+                      Interactive learning strategies for dyslexia.
+                    </p>
                     <Link href="/dyslexia">
-                      <Button variant="outline" className="mt-2 border-blue-200 text-blue-600 hover:bg-blue-50">
+                      <Button
+                        variant="outline"
+                        className="mt-2 border-blue-200 text-blue-600 hover:bg-blue-50"
+                      >
                         Explore Modules
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
@@ -105,14 +132,17 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-          <div className="container px-4 md:px-6">
+
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-white align-items-center">
+          <div className="container mx-auto px-12">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Approach</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Our Approach
+                </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  We combine early detection with gamified, level-based therapy modules to make learning engaging and
-                  effective.
+                  We combine early detection with gamified, level-based therapy
+                  modules to make learning engaging and effective.
                 </p>
               </div>
             </div>
@@ -123,7 +153,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Early Detection</h3>
                 <p className="text-gray-500">
-                  Our scientifically-backed screening tools help identify signs of autism and dyslexia early.
+                  Our scientifically-backed screening tools help identify signs
+                  of autism and dyslexia early.
                 </p>
               </div>
               <div className="flex flex-col justify-center space-y-4">
@@ -147,7 +178,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Gamified Therapy</h3>
                 <p className="text-gray-500">
-                  Level-based modules make therapy engaging, motivating, and effective for all ages.
+                  Level-based modules make therapy engaging, motivating, and
+                  effective for all ages.
                 </p>
               </div>
               <div className="flex flex-col justify-center space-y-4">
@@ -170,25 +202,28 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Progress Tracking</h3>
                 <p className="text-gray-500">
-                  Monitor development with detailed progress tracking and personalized recommendations.
+                  Monitor development with detailed progress tracking and
+                  personalized recommendations.
                 </p>
               </div>
             </div>
           </div>
         </section>
       </main>
+
       <footer className="border-t bg-slate-50">
-        <div className="container flex flex-col gap-4 py-10 md:flex-row md:gap-8 md:py-12">
+        <div className="container mx-auto px-12 flex flex-col gap-4 py-10 md:flex-row md:gap-8 md:py-12">
           <div className="flex flex-col gap-2 md:gap-4 lg:flex-1">
             <Link href="/" className="flex items-center gap-2 font-semibold">
               <Brain className="h-6 w-6" />
               <span>NeuroDev Therapy</span>
             </Link>
             <p className="text-sm text-gray-500 md:text-base">
-              Providing specialized therapy for individuals with autism and dyslexia.
+              Providing specialized therapy for individuals with autism and
+              dyslexia.
             </p>
           </div>
-          <div className="grid flex-1 grid-cols-2 gap-8 sm:grid-cols-3">
+          <div className="grid flex-1 grid-cols-2 gap-10 sm:grid-cols-3">
             <div className="flex flex-col gap-2">
               <h3 className="font-semibold">Resources</h3>
               <nav className="flex flex-col gap-2">
@@ -231,13 +266,14 @@ export default function Home() {
           </div>
         </div>
         <div className="border-t py-6">
-          <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-center text-sm text-gray-500 md:text-left">
-              © {new Date().getFullYear()} NeuroDev Therapy. All rights reserved.
+          <div className="container mx-auto px-12 flex flex-col items-center justify-center gap-4">
+            <p className="text-center text-sm text-gray-500 md:text-base">
+              © {new Date().getFullYear()} NeuroDev Therapy. All rights
+              reserved.
             </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
