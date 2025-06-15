@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image"; // Added Image import
+import Image from "next/image"; 
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 
-// Define the type for the card data
+
 type SocialSkillCard = {
   title: string;
   description: string;
@@ -20,7 +20,7 @@ type SocialSkillCard = {
   video?: string;
 };
 
-// Define the data for the cards
+
 const socialSkillsCardsData: SocialSkillCard[] = [
   {
     title: "Cartoon Videos of Social Situation",
@@ -78,10 +78,7 @@ export default function SocialSkillsPage() {
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
             {socialSkillsCardsData.map((card) => (
-              <Card
-                key={card.title}
-                className="flex flex-col transition-all hover:shadow-lg"
-              >
+              <Card key={card.title}>
                 <CardHeader>
                   <CardTitle className="text-purple-600">
                     {card.title}
@@ -108,7 +105,10 @@ export default function SocialSkillsPage() {
                   </div>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  {/* Content for the card can be added here if needed */}
+                    <p className="text-gray-600">
+                        {card.description ||
+                        "Engage in this activity to enhance your social skills."}
+                    </p>
                 </CardContent>
                 <CardFooter>
                   <Button
@@ -123,7 +123,11 @@ export default function SocialSkillsPage() {
           </div>
         </div>
       </main>
-      {/* Footer can be added here if needed, similar to other pages */}
+        <footer className="py-6 bg-gray-100 text-center text-gray-600">
+            <div className="container">
+            <p>&copy; {new Date().getFullYear()} Autism Learning Modules</p>
+            </div>
+        </footer>
     </div>
   );
 }
