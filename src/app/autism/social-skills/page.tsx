@@ -1,6 +1,9 @@
+"use client";
 import Link from "next/link";
-import Image from "next/image"; 
+import Image from "next/image";
+import { useState } from "react"; 
 import { Button } from "@/components/ui/button";
+import { Lightbox } from "@/components/ui/lightbox"; 
 import {
   Card,
   CardContent,
@@ -10,7 +13,6 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
-
 
 type SocialSkillCard = {
   title: string;
@@ -52,10 +54,30 @@ const socialSkillsCardsData: SocialSkillCard[] = [
 ];
 
 export default function SocialSkillsPage() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxContent, setLightboxContent] = useState<{
+    src: string;
+    alt: string;
+    type: "image" | "video";
+  } | null>(null);
+
+  const openLightbox = (content: {
+    src: string;
+    alt: string;
+    type: "image" | "video";
+  }) => {
+    setLightboxContent(content);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-purple-50 to-white">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center">
+        <div className="container px-4 md:px-6 py-4">
           <Link
             href="/autism"
             className="mr-auto flex items-center gap-2 text-lg font-semibold"
@@ -86,10 +108,27 @@ export default function SocialSkillsPage() {
                   {card.description && (
                     <CardDescription>{card.description}</CardDescription>
                   )}
-                  {/* Check if it's a video or an image */}
-                  <div className="mt-4 aspect-video overflow-hidden rounded-md">
+                  <div
+                    className="mt-4 aspect-video overflow-hidden rounded-md cursor-pointer"
+                    onMouseEnter={() =>
+                      openLightbox(
+                        card.video
+                          ? { src: card.video, type: "video", alt: card.title }
+                          : { src: card.image, type: "image", alt: card.title }
+                      )
+                    }
+                    onMouseLeave={closeLightbox}
+                  >
                     {card.video ? (
-                      <video controls className="object-cover w-full h-full">
+                      <video
+                        controls
+                        autoPlay
+                        loop
+                        muted
+                        width="640"
+                        height="360"
+                        className="object-cover w-full h-full pointer-events-none" 
+                      >
                         <source src={card.video} type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
@@ -99,7 +138,7 @@ export default function SocialSkillsPage() {
                         alt={card.title}
                         width={600}
                         height={400}
-                        className="object-cover w-full h-full"
+                        className="object-contain w-full h-full pointer-events-none" 
                       />
                     )}
                   </div>
@@ -123,10 +162,16 @@ export default function SocialSkillsPage() {
           </div>
         </div>
       </main>
-        <footer className="py-6 bg-gray-100 text-center text-gray-600">
-            <div className="container">
-            <p>&copy; {new Date().getFullYear()} Autism Learning Modules</p>
-            </div>
+      {lightboxOpen && lightboxContent && (
+        <Lightbox
+          src={lightboxContent.src}
+          alt={lightboxContent.alt}
+          type={lightboxContent.type}
+          onClose={closeLightbox}
+        />
+      )}
+        <footer className="py-6 text-center text-gray-500">
+            <p>&copy; {new Date().getFullYear()} Autism Learning Platform</p>
         </footer>
     </div>
   );
