@@ -571,7 +571,7 @@ export default function AutismPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Link href="/autism/language-literacy" className="w-full">
+                  <Link href="/autism/languageliteracy" className="w-full">
                     <Button variant="outline" className="w-full border-purple-200 text-purple-600 hover:bg-purple-50">
                       Start Module
                       <ArrowRight className="ml-2 h-4 w-4" />
