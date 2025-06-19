@@ -2,27 +2,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Brain, BookOpen, TestTube } from "lucide-react"
 
-import { supabase } from "@/supabase/supabase-client";
-
-async function testSupabaseConnection() {
-  try {
-    const { data, error } = await supabase.from("test_table").select("*").limit(1);
-
-    if (error) {
-      console.error("Error connecting to Supabase:", error.message);
-      return false;
-    }
-
-    console.log("Supabase connection successful. Data:", data);
-    return true;
-  } catch (err) {
-    console.error("Unexpected error:", err);
-    return false;
-  }
-}
-
-testSupabaseConnection();
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
