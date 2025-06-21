@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Brain, ArrowLeft, Star, CheckCircle, Play, Volume2, Target, Users, Video } from "lucide-react"
+import { Brain, ArrowLeft, Star, CheckCircle, Play, Target, Users, Video } from "lucide-react"
 
 export default function BehavioralTrainingModule() {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null)
