@@ -16,17 +16,17 @@ First **STAR ⭐** the repository then
 
 Click the **"Fork"** button on the top-right of the [GitHub repo](https://github.com/Dev-Dhruba/NeuroDev-Therapy).
 
-![Fork Button](./src/contributing/fork-button.png)
+![Fork Button](./public/contributing/fork-button.png)
 
 Leave the fork setup page as it is and create fork.
 
-![Fork Setup](./src/contributing/fork-setup.png)
+![Fork Setup](./public/contributing/fork-setup.png)
 
 Then clone your fork:
 
 Open your **file explorer** create an empty folder or folder were you want to clone the forked repository.<br/>
 On the top bar type ```cmd``` and hit enter.
-![Clone Locally](./src/contributing/typecmd.png)
+![Clone Locally](./public/contributing/typecmd.png)
 
 Then pase the command given below and hit enter.
 
@@ -36,7 +36,7 @@ cd NeuroDev-Therapy
 ```
 It will look something like this:
 
-![Cmd](./src/contributing/cmd.png)
+![Cmd](./public//contributing/cmd.png)
 
 **Note:** The images shown are for reference purposes only. The actual appearance and layout may vary depending on your system or environment.
 
