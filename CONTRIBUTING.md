@@ -24,11 +24,11 @@ Leave the fork setup page as it is and create fork.
 
 Then clone your fork:
 
-Open your **file explorer** create an empty folder or folder were you want to clone the forked repository.<br/>
+Open your **file explorer** create an empty folder or folder where you want to clone the forked repository.<br/>
 On the top bar type ```cmd``` and hit enter.
 ![Clone Locally](./public/contributing/typecmd.png)
 
-Then pase the command given below and hit enter.
+Then paste the command given below and hit enter.
 
 ```bash
 git clone https://github.com/<your-username>/NeuroDev-Therapy.git
