@@ -1,10 +1,14 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Brain, BookOpen, TestTube } from "lucide-react"
+import Link from "next/link";
+import { Navbar } from "@/components/ui/navbar";
+import { ArrowRight, Brain, BookOpen, TestTube } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+
+      <Navbar />
+
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-slate-50">
           <div className="container px-4 md:px-6">
@@ -195,5 +199,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
