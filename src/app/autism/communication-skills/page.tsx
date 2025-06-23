@@ -101,24 +101,7 @@ export default function CommunicationSkillsModule() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="border-b">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <Link href="/autism" className="flex items-center gap-2 font-semibold">
-            <Brain className="h-6 w-6" />
-            <span>NeuroDev Therapy</span>
-          </Link>
-          <div className="flex items-center gap-4">
-            <div className="text-sm">
-              Level: <span className="font-bold">{currentLevel}</span>
-            </div>
-            <Link href="/autism">
-              <Button variant="outline" size="sm">
-                Exit Module
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </header>
+      {/* Header removed, now in layout.tsx */}
       <main className="flex-1 py-12">
         <div className="container px-4 md:px-6">
           <div className="mb-8">
