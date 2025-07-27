@@ -1,11 +1,31 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Brain } from "lucide-react";
+import { Brain, User } from "lucide-react";
+import { usePathname } from 'next/navigation';
+import { supabase } from "@/lib/supabaseClient";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  const pathname = usePathname();
+  const isAuthPage = pathname === '/AuthPage';
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      setIsSignedIn(!!session);
+    };
+    checkAuth();
+
+    // Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      setIsSignedIn(!!session);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
 
   return (
     <header className="border-b relative">
@@ -28,9 +48,28 @@ export function Navbar() {
             About Us
           </Link>
         </nav>
-        <Button variant="outline" size="sm" className="hidden md:flex">
-          Contact Us
-        </Button>
+        
+        <div className="hidden md:flex gap-4">
+          {!isAuthPage && (
+            <Button variant="default" size="sm" className="flex items-center gap-2">
+              {isSignedIn ? (
+                <Link href="/dashboard" className="flex items-center gap-2">
+                  <User className="h-4 w-4" />
+                  Dashboard
+                </Link>
+              ) : (
+                <Link href="/AuthPage" className="flex items-center gap-2">
+                  <User className="h-4 w-4" />
+                  Login/Signup
+                </Link>
+              )}
+            </Button>
+          )}
+          <Button variant="outline" size="sm">
+            Contact Us
+          </Button>
+        </div>
+
         <Button
           variant="outline"
           size="icon"
@@ -70,7 +109,24 @@ export function Navbar() {
           <Link href="/about" className="text-sm font-medium hover:underline underline-offset-4" onClick={() => setMobileMenuOpen(false)}>
             About Us
           </Link>
-          <Button variant="outline" size="sm" className="w-full" onClick={() => setMobileMenuOpen(false)}>
+          {!isAuthPage && (
+            isSignedIn ? (
+              <Link href="/dashboard" onClick={() => setMobileMenuOpen(false)}>
+                <Button variant="default" size="sm" className="w-full flex items-center gap-2">
+                  <User className="h-4 w-4" />
+                  Dashboard
+                </Button>
+              </Link>
+            ) : (
+              <Link href="/AuthPage" onClick={() => setMobileMenuOpen(false)}>
+                <Button variant="default" size="sm" className="w-full flex items-center gap-2">
+                  <User className="h-4 w-4" />
+                  Login/Signup
+                </Button>
+              </Link>
+            )
+          )}
+          <Button variant="outline" size="sm" className="w-full">
             Contact Us
           </Button>
         </nav>
