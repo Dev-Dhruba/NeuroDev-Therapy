@@ -1,6 +1,7 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Brain, BookOpen, TestTube } from "lucide-react"
+import Link from "next/link";
+import { Navbar } from "@/components/ui/navbar";
+import { ArrowRight, Brain, BookOpen, TestTube } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -255,5 +256,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
